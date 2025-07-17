@@ -24,9 +24,18 @@ $env.config.show_banner = false
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+
+alias nvm = zsh ~/.nvm/nvm.sh 
+
 source ~/.zoxide.nu
 
+# android sdk
+#
+alias emulator = /home/nehal/Android/sdk/emulator/emulator
+alias android-studio = /usr/local/android-studio/bin/studio
+alias adb = /home/nehal/Android/sdk/platform-tools/adb
 
 alias cd = z 
 
+~/wsl/WSLHostPatcher.exe
 nu ~/.config/nushell/scripts/display_banner.nu
